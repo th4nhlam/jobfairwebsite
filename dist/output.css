@@ -1035,6 +1035,14 @@ video {
   height: auto;
 }
 
+<<<<<<< HEAD
+=======
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+>>>>>>> thoang
 .h-full {
   height: 100%;
 }
@@ -1059,6 +1067,19 @@ video {
   min-height: auto;
 }
 
+<<<<<<< HEAD
+=======
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
+>>>>>>> thoang
 .\!w-px {
   width: 1px !important;
 }
@@ -1175,6 +1196,14 @@ video {
   width: auto;
 }
 
+<<<<<<< HEAD
+=======
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+>>>>>>> thoang
 .w-full {
   width: 100%;
 }
@@ -1227,6 +1256,13 @@ video {
   max-width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+>>>>>>> thoang
 .flex-auto {
   flex: 1 1 auto;
 }
@@ -1247,6 +1283,17 @@ video {
   flex-grow: 0;
 }
 
+<<<<<<< HEAD
+=======
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
+>>>>>>> thoang
 .basis-auto {
   flex-basis: auto;
 }
@@ -1489,6 +1536,13 @@ video {
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
+=======
+.items-start {
+  align-items: flex-start;
+}
+
+>>>>>>> thoang
 .items-end {
   align-items: flex-end;
 }
@@ -1935,6 +1989,14 @@ video {
   padding-right: 0.125rem;
 }
 
+<<<<<<< HEAD
+=======
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+>>>>>>> thoang
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1995,6 +2057,19 @@ video {
   padding-bottom: 0.5rem;
 }
 
+<<<<<<< HEAD
+=======
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+>>>>>>> thoang
 .py-\[0\.32rem\] {
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;
@@ -2029,6 +2104,13 @@ video {
   padding-bottom: 0px;
 }
 
+<<<<<<< HEAD
+=======
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+>>>>>>> thoang
 .pl-\[50px\] {
   padding-left: 50px;
 }
@@ -2045,6 +2127,17 @@ video {
   padding-right: 24px;
 }
 
+<<<<<<< HEAD
+=======
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-0\.5 {
+  padding-top: 0.125rem;
+}
+
+>>>>>>> thoang
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -2053,6 +2146,13 @@ video {
   padding-top: 0.625rem;
 }
 
+<<<<<<< HEAD
+=======
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+>>>>>>> thoang
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
 }
@@ -2377,6 +2477,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+<<<<<<< HEAD
+=======
+.underline {
+  text-decoration-line: underline;
+}
+
+>>>>>>> thoang
 .no-underline {
   text-decoration-line: none;
 }
@@ -3547,6 +3654,61 @@ video {
   }
 }
 
+<<<<<<< HEAD
+=======
+@media (min-width: 640px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:max-w-xl {
+    max-width: 36rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .md\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+>>>>>>> thoang
 @media not all and (min-width: 768px) {
   @media (orientation: landscape) {
     .max-md\:landscape\:h-8 {
