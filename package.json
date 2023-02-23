@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "tw-elements": "^1.0.0-beta1"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.2.7"
-=======
   "name": "jobfairwebsite",
   "version": "1.0.0",
   "description": "Web cho Job Fair",
@@ -27,6 +20,5 @@
   "dependencies": {
     "tailwindcss": "^3.2.7",
     "tw-elements": "^1.0.0-beta1"
->>>>>>> thoang
   }
 }
