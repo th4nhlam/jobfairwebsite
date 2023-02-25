@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/th4nhlam/jobfairwebsite#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "tailwindcss": "^3.2.7",
     "tw-elements": "^1.0.0-beta1"
   }
