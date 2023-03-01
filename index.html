@@ -20,15 +20,17 @@
       </div>
       <div class="right-section">
           <div class="fullscreen">
-              <li>
-                  <a href="#"> THÔNG TIN CHUNG</a>
+              <li class="choose-box">
+                    <a href="#"> THÔNG TIN CHUNG</a>
+                    <div class="box btn1"></div>
               </li>
               <div class="dropdown">
                   <div class="dropdown-box">
-                      <li>
-                         <a href="#"> HOẠT ĐỘNG</a>
-                      </li>
-                      <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i>
+                      <li class="choose-box">
+                        <a href="#"> HOẠT ĐỘNG</a>
+                        <div class="box btn1"></div>
+                  </li>
+                      <!-- <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i> -->
                   </div>
                   <ul class="dropdown-hover">
                       <li>
@@ -45,18 +47,22 @@
                       </li>   
                   </ul>
               </div>
-              <li>
-                  <a href="#">ĐỐI TÁC</a>
+              <li class="choose-box">
+                <a href="#">ĐỐI TÁC</a>
+                <div class="box btn1"></div>
               </li>
               <li>
-                   <a href="#">ĐỘI NGŨ</a>
+              <li class="choose-box">
+                <a href="#">ĐỘI NGŨ</a>
+                <div class="box btn1"></div>
               </li>
               <div class="dropdown">
                   <div class="dropdown-box">
-                      <li>
-                          <a href="#">ĐĂNG KÝ</a>
-                      </li>
-                      <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i>
+                    <li class="choose-box">
+                      <a href="#">ĐĂNG KÍ</a>
+                      <div class="box btn1"></div>
+                    </li>
+                      <!-- <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i> -->
                   </div>
                   <ul class="dropdown-hover">
                       <li>
@@ -193,7 +199,7 @@
       class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-te-carousel-item>
       <img
-        src="../assets/img1.jpg"
+        src="./assets/img1.jpg"
         class="block w-full"
         alt="Camera" />
     </div>
@@ -350,7 +356,7 @@
               <div class="px-2 items-start">
                 <div>
                   <div class="">
-                    <img src="../assets/footerlogo.png" alt="DUT logo" class="max-w-full h-auto">
+                    <img src="./assets/footerlogo.png" alt="DUT logo" class="max-w-full h-auto">
                   </div>
                   <div class="py-4 px-2">
                     <div>
@@ -368,8 +374,8 @@
   </footer>
 
 
-  <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
+  <script src="./src/index.js"></script>
   <script>
     AOS.init();
   </script>
