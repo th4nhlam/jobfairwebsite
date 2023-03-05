@@ -553,6 +553,18 @@ video {
   }
 }
 
+.number {
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.counting-items {
+  padding: 0.5rem;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -700,6 +712,10 @@ video {
   top: 13px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -734,10 +750,6 @@ video {
 
 .z-\[999\] {
   z-index: 999;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .float-right {
@@ -902,6 +914,10 @@ video {
   display: table;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -1047,6 +1063,14 @@ video {
   height: 100vh;
 }
 
+.h-\[1000px\] {
+  height: 1000px;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -1103,6 +1127,10 @@ video {
 
 .w-2 {
   width: 0.5rem;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-3 {
@@ -1206,8 +1234,8 @@ video {
   width: 100vw;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
+.w-\[1000px\] {
+  width: 1000px;
 }
 
 .min-w-0 {
@@ -1508,6 +1536,10 @@ video {
           appearance: none;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .\!flex-row {
   flex-direction: row !important;
 }
@@ -1556,6 +1588,16 @@ video {
   justify-content: space-evenly;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .\!overflow-hidden {
   overflow: hidden !important;
 }
@@ -1568,12 +1610,20 @@ video {
   overflow: visible;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .truncate {
@@ -1592,6 +1642,10 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .break-normal {
@@ -1872,11 +1926,6 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -2039,6 +2088,11 @@ video {
   padding-right: 12px;
 }
 
+.px-\[36px\] {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -2119,6 +2173,10 @@ video {
   padding-right: 8rem;
 }
 
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .pr-\[24px\] {
   padding-right: 24px;
 }
@@ -2145,6 +2203,10 @@ video {
 
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
+}
+
+.pt-\[80px\] {
+  padding-top: 80px;
 }
 
 .text-left {
@@ -2184,9 +2246,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-9xl {
@@ -2248,14 +2310,14 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -2735,18 +2797,19 @@ video {
 .header
 {
   justify-content: space-between;
-  height: 70px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(15, 16, 32, 0.6);
+  background-color: #FFF;
   /* background-color: rgb(255, 255, 255); */
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(0,2,47,1);
+  /* border-bottom-width: 1px; */
+  /* border-bottom-style: solid;
+    border-bottom-color: rgba(0,2,47,1); */
+  text-align: center;
   z-index: 1;
   opacity: 1;
 }
@@ -2771,8 +2834,9 @@ video {
 
 .main-content
 {
+  color:rgba(165,165,165,255);
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .right-section
@@ -2791,7 +2855,9 @@ video {
 a
 {
   text-decoration: none;
-  color: #FFF;
+  font-size: 20px;
+  color: rgba(165,165,165,255);
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .fullscreen
@@ -2808,17 +2874,70 @@ a
 
 li
 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 15px;
   list-style: none;
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  padding: 10px 10px;
+  color: rgba(165,165,165,255);
+}
+
+.choose-box:hover
+{
+  color: #b5dfd9;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 a:hover
 {
-  color: rgb(142, 5, 5);
+  color: #b5dfd9;
+  /* background: red; */
   cursor: pointer;
   transition: 0.4s;
+}
+
+.box
+{
+  width: 5px;
+  height:25px;
+  /* margin-top:10px; */
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+
+.choose-box:hover>.box
+{
+  color: #b5dfd9;
+  z-index: 2;
+}
+
+.box:before
+{
+  content: "";
+  position: absolute;
+  left:0;
+  top:0;
+  /* bottom:0;
+    left:0; */
+  width:100%;
+  height:100%;
+  background: #b5dfd9;
+  z-index: -1;
+  transition: transform 1s;
+  transform-origin: bottom;
+  transform-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before
+{
+  transform: scaleY(0);
+}
+
+.choose-box:hover>.btn1::before
+{
+  transform:scaleY(1);
 }
 
 .dropdown
@@ -2826,6 +2945,7 @@ a:hover
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: red; */
 }
 
 .right-section li
@@ -2849,6 +2969,13 @@ a:hover
   transition: opacity 0.15s;
 }
 
+.choose-box
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* .dropdown-hover:hover .dropdown-hover
 {
     opacity: 1;
@@ -2860,18 +2987,16 @@ a:hover
 .dropdown-hover
 {
   opacity:0;
-  margin-top: 20px;
   transition: opacity 0.15s;
-  background-color: rgb(78, 5, 146);
+  background-color: #e2e8f0;
   position: absolute;
   display: none;
   /* display: flex;
         flex-direction: column; */
   margin-left: 10px;
-  padding-top: 0px;
+  margin-top: 70px;
   padding: 10px 10px 15px 20px;
   box-shadow: 8px 8px 16px 0px rgb(241 62 131 / 20%);
-  background-color: #200343;
 }
 
 .dropdown-hover li
@@ -4276,4 +4401,3 @@ ul li:hover ul.dropdown
     fill: #fff;
   }
 }
-

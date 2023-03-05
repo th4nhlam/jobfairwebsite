@@ -3,7 +3,14 @@ module.exports = {
   content: ['./src/**/*.{html,js}',
             "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond']
+    }
+    },
+    
   },
   plugins: [require("tw-elements/dist/plugin")],
 }
