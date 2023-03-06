@@ -163,6 +163,7 @@ a:hover
     display: flex;
     flex-direction: column;
     transition: opacity 0.15s;
+    z-index: 2;
 }
 
 .choose-box
@@ -190,6 +191,7 @@ a:hover
     margin-left: 10px;
     margin-top: 70px;
     padding: 10px 10px 15px 20px;
+    z-index: 2;
     box-shadow: 8px 8px 16px 0px rgb(241 62 131 / 20%);
 }
 .dropdown-hover li
@@ -197,6 +199,7 @@ a:hover
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
+    z-index: 2;
 }
 /* not-fullscreen */
 .hamburger
@@ -438,7 +441,13 @@ ul li:hover ul.dropdown
     .number{
         @apply text-right font-extrabold text-8xl font-montserrat
     }
+    .number-r{
+        @apply text-left font-extrabold text-8xl font-montserrat
+    }
     .counting-items{
         @apply p-2
+    }
+    .counting-items-right{
+        @apply p-2 text-left
     }
 }
