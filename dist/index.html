@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<!-- <link href="input.css" rel="stylesheet"> -->
+		<link href="input.css" rel="stylesheet">
 		<link href="../dist/output.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 		<title>DUT Job Fair 2023</title>
 	</head>
-	<body class="overflow-x-hidden">
+	<body>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<nav class="z-10">
 			<div class="header">
@@ -54,7 +54,6 @@
 							<a href="#">ĐỐI TÁC</a>
 							<div class="box btn1"></div>
 						</li>
-						<li>
 						<li class="choose-box">
 							<a href="#">ĐỘI NGŨ</a>
 							<div class="box btn1"></div>
@@ -148,18 +147,44 @@
 				<img class="background-image" src="pic/briefBg.png" alt="">
 			</div>
 		</nav>
-		<div class="h-[1160] flex">
+		<div class="block h-screen sm:hidden">
+			<img src="../assets/background.png" class="pt-[80px] h-screen overflow-hidden">
+		</div>
+		<div class="h-screen xl:h-screen xl:flex xl:pt-[80px] max-sm:hidden" data-aos="fade-up" data-aos-duration="1500">
+			
 			<div class="w-1/2 bg-slate-200 flex flex-col items-center justify-center">
 				<div class="ml-16">
-					<h1 class="text-bold text-red-900 text-3xl font-bold">JOB FAIR 2023</h1>
+					<h1 class="text-bold text-red-900 text-3xl font-bold max-sm:text-blue-600">JOB FAIR 2023</h1>
 					<p class="mt-10 pr-32 text-justify w-auto">Velit magna et voluptate anim ad labore cillum consectetur. Id sint labore eiusmod laborum ea dolor reprehenderit reprehenderit. Incididunt quis reprehenderit eiusmod do enim non exercitation minim anim eu do.</p>
 				</div>
+				<!--countdown clock luvohoang -->
+				<div class="countdown_clock">
+					<div id="countdown" class="countdown">
+						<div class="time">
+							<h2 id="days"></h2>
+							<small>Days</small>
+						</div>
+						<div class="time">
+							<h2 id="hours"></h2>
+							<small>Hours</small>
+						</div>
+						<div class="time">
+							<h2 id="minutes"></h2>
+							<small>Minutes</small>
+						</div>
+						<div class="time">
+							<h2 id="seconds"></h2>
+							<small>Seconds</small>
+						</div>
+					</div>
+					<script src="clock.js"></script>
+				</div>
 			</div>
-			<div class="flex items-end -ml-16 h-screen mt-[80px] w-full bg-slate-200">
+			<div class="hidden xl:flex xl:flex-col xl:justify-end xl:items-end xl:-ml-16 xl:h-screen xl:w-full xl:bg-slate-200">
 				<!-- <img src="../assets/background.png" class="containter w-1/2"> -->
 				<div
 							id="mainimg"
-							class="relative"
+							class="hidden xl:relative xl:block"
 							data-te-carousel-init
 							data-te-carousel-slide>
 							<div
@@ -174,7 +199,7 @@
 										alt="Wild Landscape" />
 								</div>
 								<div
-									class=" float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
 										src="../assets/background.png"
@@ -238,10 +263,10 @@
 		<div class="bg-slate-200 overflow-hidden">
 			<div class="h-auto">
 				<div id="nhungconsoantuong" class="flex items-center justify-center py-6" data-aos="fade-down" data-aos-duration="1500">
-					<h1 class="text-6xl text-red-900 font-bold">NHỮNG CON SỐ ẤN TƯỢNG</h1>
+					<h1 class="text-6xl text-red-900 font-bold max-lg:text-2xl">NHỮNG CON SỐ ẤN TƯỢNG</h1>
 				</div>
-				<div class="flex h-screen">
-					<div class="w-1/2 pr-5 flex flex-col justify-around overflow-y-hidden" data-aos="fade-right" data-aos-duration="1500">
+				<div class="flex h-screen max-lg:flex-col">
+					<div class="w-1/2 pr-5 flex flex-col justify-around overflow-y-hidden max-lg:h-screen max-lg:w-full" data-aos="fade-right" data-aos-duration="1500">
 						<div class="counting-items">
               			<h1 class="number">45</h1>
 						<p class="text-right">Là số doanh nghiệp, công ty trở thành đối tác của chương trình</p>
@@ -256,13 +281,13 @@
 						</div>
 						<div class="counting-items"><p class="text-right"> <span class="number">600</span> <br>sinh viên</p></div>
 					</div>
-					<div class="w-1/2 bg-cyan-400" data-aos="fade-left" data-aos-duration="1500">
+					<div class="w-1/2 bg-cyan-400 max-sm:hidden" data-aos="fade-left" data-aos-duration="1500">
 					</div>
 				</div>
 			</div>
 			<div class="h-full">
-				<div class="flex">
-					<div class="w-1/2 h-screen bg-red-300" data-aos="fade-right" data-aos-duration="1500">
+				<div class="flex max-lg:block">
+					<div class="w-1/2 h-screen bg-red-300 max-lg:hidden" data-aos="fade-right" data-aos-duration="1500">
 					</div>
 					<div class="w-1/2 h-screen flex flex-col justify-around" data-aos="fade-left" data-aos-duration="1500">
 						<div class="counting-items-right">
@@ -282,18 +307,18 @@
 		</div>
 		<div id="vedutjobfair" class="bg-white h-screen flex flex-row items-center justify-center">
 			<div class="flex flex-col items-center justify-center w-2/3">
-				<h1 class="text-6xl text-red-900 font-bold" data-aos="fade-down" data-aos-duration="1500"> VỀ DUT JOB FAIR 2022 </h1>
+				<h1 class="text-6xl text-red-900 font-bold text-center max-lg:text-3xl" data-aos="fade-down" data-aos-duration="1500"> VỀ DUT JOB FAIR 2023 </h1>
 				<br>
-				<p class="italic" data-aos="fade-up" data-aos-duration="1500">	DUT Job Fair 2022 là sự kiện lớn thường niên của Trường Đại Học Bách Khoa - Đại Học Đà Nẵng, nhằm đáp ứng nhu cầu tuyển dụng nguồn nhân lực chất lượng cao của doanh nghiệp cũng như tạo cơ hội tìm kiếm việc làm cho sinh viên. Bên cạnh đó, sự kiện giúp sinh viên có điều kiện tiếp xúc với doanh nghiệp, rèn luyện thêm kỹ năng để tìm kiếm việc làm, đồng thời tăng cường mối quan hệ hợp tác giữa Nhà trường và Doanh nghiệp trong công tác đào tạo, sử dụng hiệu quả nguồn nhân lực, đáp ứng nhu cầu xã hội. 	"</p>
+				<p class="italic text-justify" data-aos="fade-up" data-aos-duration="1500">	DUT Job Fair 2023 là sự kiện lớn thường niên của Trường Đại Học Bách Khoa - Đại Học Đà Nẵng, nhằm đáp ứng nhu cầu tuyển dụng nguồn nhân lực chất lượng cao của doanh nghiệp cũng như tạo cơ hội tìm kiếm việc làm cho sinh viên. Bên cạnh đó, sự kiện giúp sinh viên có điều kiện tiếp xúc với doanh nghiệp, rèn luyện thêm kỹ năng để tìm kiếm việc làm, đồng thời tăng cường mối quan hệ hợp tác giữa Nhà trường và Doanh nghiệp trong công tác đào tạo, sử dụng hiệu quả nguồn nhân lực, đáp ứng nhu cầu xã hội. 	"</p>
 			</div>
 		</div>
 		<!--grid-->
-		<div class="h-screen">
+		<div class="h-screen max-lg:h-full">
 			<div class="flex flex-row justify-center">
-				<h1 class="text-6xl text-red-900 font-bold" data-aos="fade-down" data-aos-duration="1500">CÁC HOẠT ĐỘNG NỔI BẬT</h1>
+				<h1 class="text-6xl text-red-900 font-bold pb-4 max-lg:text-2xl max-lg:pb-6" data-aos="fade-down" data-aos-duration="1500">CÁC HOẠT ĐỘNG NỔI BẬT</h1>
 			</div>
 			<div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1500">
-				<div class="grid grid-cols-3 gap-3 px-3">
+				<div class="grid grid-cols-3 gap-3 px-3 max-lg:flex max-lg:flex-col">
 					<!-- Ảnh 1 -->
 					<div>
 						<div
@@ -510,7 +535,7 @@
 								</div>
 							</div>
 							<button
-								class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+								class="absolute top-0 bottom-0 2xl:top-0 2xl:bottom-0 left-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
 								data-te-target="#carouselExampleControls3"
 								data-te-slide="prev">
@@ -534,7 +559,7 @@
 									>
 							</button>
 							<button
-								class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+								class="absolute top-0 bottom-0 2xl:top-0 2xl:bottom-0 right-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
 								data-te-target="#carouselExampleControls3"
 								data-te-slide="next">
@@ -568,6 +593,94 @@
 		</div>
 		</div>
 
+    <!-- sponsor -->
+    <section class="h-max relative bg-white">
+      <div>
+				<div class="flex flex-col justify-center h-80">
+          <div class="flex flex-row justify-center pt-8">
+            <span class="text-center px-4">
+              <h1 class="text-6xl text-red-900 font-bold aos-init aos-animate max-lg:text-2xl" data-aos="fade-down" data-aos-duration="1500">CÁC ĐỐI TÁC CỦA CHÚNG TÔI</h1>
+            </span>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex flex-col">
+						<div class="flex flex-col justify-center h-24 bg-slate-300">
+							<div class="flex flex-row justify-center">
+								<span class="text-center px-6">
+									<h2 class="font-bold">NHÀ TÀI TRỢ VÀNG</h2>
+								</span>
+							</div>
+						</div>
+						<div class="flex flex-row justify-center h-fit px-3 py-6">
+							<div class="flex-1 max-w-fit px-2">
+								<img src="../assets/logo-placeholder.jpg" alt="logo_1" class="max-h-64 w-auto">
+							</div>
+							<div class="flex-1 max-w-fit px-2">
+								<img src="../assets/logo-placeholder.jpg" alt="logo_2" class="max-h-64 w-auto">
+							</div>
+						</div>
+          </div>
+        </div>
+				<div class="flex flex-col">
+          <div class="flex flex-col">
+						<div class="flex flex-col justify-center h-24 bg-slate-300">
+							<div class="flex flex-row justify-center">
+								<span class="text-center px-6">
+									<h2 class="font-bold">NHÀ TÀI TRỢ BẠC</h2>
+								</span>
+							</div>
+						</div>
+						<div class="flex flex-row justify-center h-fit px-3 py-6">
+							<div class="flex-1 max-w-fit px-2">
+								<img src="../assets/logo-placeholder.jpg" alt="logo_1" class="max-h-60 w-auto">
+							</div>
+							<div class="flex-1 max-w-fit px-2">
+								<img src="../assets/logo-placeholder.jpg" alt="logo_2" class="max-h-60 w-auto">
+							</div>
+						</div>
+          </div>
+        </div>
+				<div class="flex flex-col">
+          <div class="flex flex-col">
+						<div class="flex flex-col justify-center h-24 bg-slate-300">
+							<div class="flex flex-row justify-center">
+								<span class="text-center px-6">
+									<h2 class="font-bold">NHÀ TÀI TRỢ ĐỒNG</h2>
+								</span>
+							</div>
+						</div>
+						<div class="grid grid-rows-2 h-full">
+							<div class="flex flex-row justify-center h-full px-2 py-3">
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_1" class="max-h-32 w-auto">
+								</div>
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_2" class="max-h-32 w-auto">
+								</div>
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_3" class="max-h-32 w-auto">
+								</div>
+							</div>
+							<div class="flex flex-row justify-center h-full px-2 py-3">
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_4" class="max-h-32 w-auto">
+								</div>
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_5" class="max-h-32 w-auto">
+								</div>
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_6" class="max-h-32 w-auto">
+								</div>
+								<div class="flex-1 max-w-fit px-2">
+									<img src="../assets/logo-placeholder.jpg" alt="logo_7" class="max-h-32 w-auto">
+								</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
 		<footer class="min-h-min relative bg-white">
@@ -630,7 +743,6 @@
 		</footer>
 		<script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
 		<script src="./index.js"></script>
-    <script src="./index2.js"></script>
 		<script>
 			AOS.init();
 		</script>

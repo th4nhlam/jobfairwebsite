@@ -1619,10 +1619,6 @@ video {
   overflow-x: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2188,6 +2184,10 @@ video {
 
 .pt-0\.5 {
   padding-top: 0.125rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-2 {
@@ -2882,14 +2882,14 @@ li
 
 .choose-box:hover
 {
-  color: #b5dfd9;
+  color: #8b3333;
   cursor: pointer;
   transition: 0.4s;
 }
 
 a:hover
 {
-  color: #b5dfd9;
+  color: #8b3333;
   /* background: red; */
   cursor: pointer;
   transition: 0.4s;
@@ -2907,7 +2907,7 @@ a:hover
 
 .choose-box:hover>.box
 {
-  color: #b5dfd9;
+  color: #8b3333;
   z-index: 2;
 }
 
@@ -2921,7 +2921,7 @@ a:hover
     left:0; */
   width:100%;
   height:100%;
-  background: #b5dfd9;
+  background: #8b3333;
   z-index: -1;
   transition: transform 1s;
   transform-origin: bottom;
@@ -4196,6 +4196,13 @@ ul li:hover ul.dropdown
   .dark\:data-\[te-select-option-disabled\]\:text-gray-400[data-te-select-option-disabled] {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+}
+
+@media not all and (min-width: 1280px) {
+  .max-xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
