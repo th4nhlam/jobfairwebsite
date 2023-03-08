@@ -4340,6 +4340,10 @@ ul li:hover ul.dropdown
     width: 100%;
   }
 
+  .xl\:max-w-\[1280px\] {
+    max-width: 1280px;
+  }
+
   .xl\:flex-col {
     flex-direction: column;
   }
