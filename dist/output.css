@@ -1075,6 +1075,14 @@ video {
   max-height: calc(100% - 64px);
 }
 
+.max-h-60 {
+  max-height: 15rem;
+}
+
+.max-h-64 {
+  max-height: 16rem;
+}
+
 .min-h-\[305px\] {
   min-height: 305px;
 }
