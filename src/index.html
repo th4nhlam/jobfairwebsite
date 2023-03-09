@@ -13,7 +13,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 		<title>DUT Job Fair 2023</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<nav class="z-10">
 			<div class="header">
@@ -180,10 +180,10 @@
 					<script src="clock.js"></script>
 				</div>
 			</div>
-			<div class="hidden xl:flex xl:flex-col xl:justify-end xl:items-end xl:-ml-16 xl:h-screen xl:w-full xl:bg-slate-200">
+			<div class="hidden xl:h-screen xl:flex xl:flex-col xl:justify-end xl:items-end xl:-ml-16 xl:max-w-[1280px] xl:w-full xl:bg-slate-200">
 				<!-- <img src="../assets/background.png" class="containter w-1/2"> -->
 				<div
-							id="mainimg"
+							id="maining"
 							class="hidden xl:relative xl:block"
 							data-te-carousel-init
 							data-te-carousel-slide>
@@ -212,7 +212,7 @@
 							<button
 								class="absolute top-0 bottom-0  z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
-								data-te-target="#mainimg"
+								data-te-target="#maining"
 								data-te-slide="prev">
 								<span class="inline-block h-8 w-8">
 									<svg
@@ -236,7 +236,7 @@
 							<button
 								class="absolute top-0 bottom-0 right-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
-								data-te-target="#mainimg"
+								data-te-target="#maining"
 								data-te-slide="next">
 								<span class="inline-block h-8 w-8">
 									<svg
@@ -260,13 +260,13 @@
 						</div>
 			</div>
 		</div>
-		<div class="bg-slate-200 overflow-hidden">
-			<div class="h-auto">
+		<div class="bg-slate-200">
+			<div class="h-full">
 				<div id="nhungconsoantuong" class="flex items-center justify-center py-6" data-aos="fade-down" data-aos-duration="1500">
-					<h1 class="text-6xl text-red-900 font-bold max-lg:text-2xl">NHỮNG CON SỐ ẤN TƯỢNG</h1>
+					<h1 class="text-6xl text-red-900 font-bold pt-12 max-xl:text-4xl max-lg:text-2xl max-lg:pt-auto">NHỮNG CON SỐ ẤN TƯỢNG</h1>
 				</div>
 				<div class="flex h-screen max-lg:flex-col">
-					<div class="w-1/2 pr-5 flex flex-col justify-around overflow-y-hidden max-lg:h-screen max-lg:w-full" data-aos="fade-right" data-aos-duration="1500">
+					<div class="w-1/2 pr-5 flex flex-col justify-around  max-lg:h-screen max-lg:w-full" data-aos="fade-right" data-aos-duration="1500">
 						<div class="counting-items">
               			<h1 class="number">45</h1>
 						<p class="text-right">Là số doanh nghiệp, công ty trở thành đối tác của chương trình</p>
@@ -320,7 +320,7 @@
 			<div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1500">
 				<div class="grid grid-cols-3 gap-3 px-3 max-lg:flex max-lg:flex-col">
 					<!-- Ảnh 1 -->
-					<div>
+					<div data-aos="fade-up" data-aos-duration="1500">
 						<div
 							id="carouselExampleControls"
 							class="relative"
@@ -410,7 +410,7 @@
 						</p>
 					</div>
 					<!-- Ảnh 2 -->
-					<div>
+					<div data-aos="fade-up" data-aos-duration="1500">
 						<div
 							id="carouselExampleControls2"
 							class="relative"
@@ -500,7 +500,7 @@
 						</p>
 					</div>
 					<!-- Ảnh3 -->
-					<div>
+					<div data-aos="fade-up" data-aos-duration="1500">
 						<div
 							id="carouselExampleControls3"
 							class="relative"
