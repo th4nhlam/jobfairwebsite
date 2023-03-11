@@ -1117,6 +1117,10 @@ video {
   max-height: calc(100% - 64px);
 }
 
+.max-h-40 {
+  max-height: 10rem;
+}
+
 .min-h-\[305px\] {
   min-height: 305px;
 }
@@ -1593,6 +1597,10 @@ video {
 
 .grid-rows-5 {
   grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .\!flex-row {
