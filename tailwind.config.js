@@ -8,6 +8,7 @@ module.exports = {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
         'garamond': ['Garamond'],
+        'podkova': ["'Podkova'"]
         
     }
     },
