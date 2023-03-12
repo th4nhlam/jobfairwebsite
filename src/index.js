@@ -10,9 +10,12 @@ document.querySelectorAll("link").forEach(n => n.addEventListener("click", () =>
     hamburger.classList.remove("active");
     menu.classList.remove("active");
 }))
+// <<<<<<< HEAD
 
-// clock.js *************************
+// // clock.js *************************
 
+// =======
+// >>>>>>> 9d5abac1506e212c7817581293a62598ba77899a
 const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');

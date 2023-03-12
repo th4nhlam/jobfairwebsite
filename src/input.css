@@ -163,6 +163,7 @@ a:hover
     
     transform: scaleX(0);
 }
+
 .choose-box:hover>.btn1::before
 {
     transform:scaleY(1);
@@ -395,7 +396,7 @@ h1
     margin: 0 0 5px;
     border: solid #200343;
     border-radius: 100px;
-    border-color: rgb(58, 147, 209);;
+    border-color: rgb(209, 58, 96);;
     padding: 12px;
 }
 
@@ -474,10 +475,10 @@ ul li:hover ul.dropdown
 
 @layer components{
     .number{
-        @apply text-right font-extrabold text-8xl font-montserrat
+        @apply text-right font-extrabold text-8xl font-montserrat text-pink-900
     }
     .number-r{
-        @apply text-left font-extrabold text-8xl font-montserrat
+        @apply text-left font-extrabold text-8xl font-montserrat text-amber-800
     }
     .counting-items{
         @apply p-2

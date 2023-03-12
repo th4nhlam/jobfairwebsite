@@ -559,6 +559,8 @@ video {
   font-size: 6rem;
   line-height: 1;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(131 24 67 / var(--tw-text-opacity));
 }
 
 .number-r {
@@ -567,6 +569,8 @@ video {
   font-size: 6rem;
   line-height: 1;
   font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(146 64 14 / var(--tw-text-opacity));
 }
 
 .counting-items {
@@ -3307,7 +3311,7 @@ h1
   margin: 0 0 5px;
   border: solid #200343;
   border-radius: 100px;
-  border-color: rgb(58, 147, 209);
+  border-color: rgb(209, 58, 96);
   padding: 12px;
 }
 
