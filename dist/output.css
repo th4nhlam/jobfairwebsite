@@ -4414,16 +4414,12 @@ ul li:hover ul.dropdown
     height: 100vh;
   }
 
-  .max-lg\:w-screen {
-    width: 100vw;
-  }
-
-  .max-lg\:w-5 {
-    width: 1.25rem;
-  }
-
   .max-lg\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .max-lg\:w-screen {
+    width: 100vw;
   }
 
   .max-lg\:flex-col {
