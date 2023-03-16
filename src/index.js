@@ -21,6 +21,10 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
+const days2 = document.getElementById('days2');
+const hours2 = document.getElementById('hours2');
+const minutes2 = document.getElementById('minutes');
+const seconds2 = document.getElementById('seconds2');
 const currentYear = new Date().getFullYear();
 
 const DJFTime = new Date(`March 30 ${currentYear} 00:00:00`);

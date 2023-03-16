@@ -154,8 +154,17 @@
 				<img class="background-image" src="pic/briefBg.png" alt="">
 			</div>
 		</nav>
-		<div class="block h-auto xl:hidden">
-			<img src="../assets/background.png" class="pt-[80px] h-screen overflow-hidden">
+		<div class="h-auto pt-[80px] xl:hidden">
+			<div class="relative">
+				<img src="../assets/background.png" class="h-screen overflow-hidden object-cover">
+				<div class="absolute top-20" >
+					<img src="../assets/logo.png" class="w-screen">
+				</div>
+			</div>
+			<div id="mobilecountdown" class="absolute bottom-5">
+				<h1 class="text-blue-100 font-bold">Hihi</h1>
+			</div>
+			
 		</div>
 		<div class=" hidden xl:h-screen xl:flex xl:pt-[80px] " >
 			
@@ -209,6 +218,7 @@
 										src="../assets/background.png"
 										class="block w-full"
 										alt="Wild Landscape" />
+									<img src="../assets/logo.png" class="absolute top-0">
 								</div>
 								<div
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
@@ -333,7 +343,7 @@
 						</div>
 						<div class="counting-items"><p class="text-right text-xl"> <span class="number">600</span> <br>sinh viên</p></div>
 					</div>
-					<div class="w-1/2 max-xl:hidden" data-aos="zoom-in-left" data-aos-duration="1500">
+					<div class="w-1/2 max-xl:hidden " data-aos="zoom-in-left" data-aos-duration="1500">
 						<div class="px-4 py-2">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.802319243922!2d108.14986941527002!3d16.075744743532386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219bc8aef65d3%3A0xd12d7a5b6d096990!2zS2h1IEYgLSBUcsaw4budbmcgxJBIQksgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1678529524874!5m2!1svi!2s" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
 						</div>
@@ -364,7 +374,7 @@
 			<br>
 			<div class="h-full">
 				<div class="flex max-lg:block">
-					<div class="w-1/2 h-screen bg-white px-8 max-lg:hidden before:content-['*'] before:absolute before:w-[10%] before:bg-gradient-to-t before:from-red-200 before:to-blue-900 before:top-[50%]" data-aos="fade-right" data-aos-duration="1500">
+					<div class="w-1/2 h-screen px-8 max-lg:hidden " data-aos="fade-right" data-aos-duration="1500">
 						<h1 class="text-center text-6xl uppercase text-amber-800 font-bold py-5">Đơn vị tổ chức:</h1>
 						<div class="flex justify-center">
 							<img src="../assets/logo-bk.jpg" class="w-1/3">
