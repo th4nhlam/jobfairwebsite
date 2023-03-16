@@ -3437,6 +3437,43 @@ ul li:hover ul.dropdown
   background-color: transparent;
 }
 
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-\[50\%\]::before {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.before\:w-\[10\%\]::before {
+  content: var(--tw-content);
+  width: 10%;
+}
+
+.before\:bg-gradient-to-t::before {
+  content: var(--tw-content);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.before\:from-red-200::before {
+  content: var(--tw-content);
+  --tw-gradient-from: #fecaca;
+  --tw-gradient-to: rgb(254 202 202 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.before\:to-blue-900::before {
+  content: var(--tw-content);
+  --tw-gradient-to: #1e3a8a;
+}
+
+.before\:content-\[\'\*\'\]::before {
+  --tw-content: '*';
+  content: var(--tw-content);
+}
+
 .after\:clear-both::after {
   content: var(--tw-content);
   clear: both;
