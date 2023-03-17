@@ -475,15 +475,24 @@ ul li:hover ul.dropdown
 
 @layer components{
     .number{
-        @apply text-right font-extrabold text-8xl font-montserrat text-pink-900
+        @apply text-right font-extrabold text-8xl font-montserrat text-pink-900;
     }
     .number-r{
-        @apply text-left font-extrabold text-8xl font-montserrat text-amber-800
+        @apply text-left font-extrabold text-8xl font-montserrat text-amber-800;
     }
     .counting-items{
-        @apply p-2
+        @apply p-2;
     }
     .counting-items-right{
-        @apply p-2 text-left
+        @apply p-2 text-left;
+    }
+    .countdown-clock{
+        @apply flex flex-col justify-center items-center rounded-full w-20 h-20 bg-transparent border-4 max-sm:h-14 max-sm:w-14; 
+    }
+    .countdown-number{
+        @apply text-5xl text-white font-podkova items-center mb-0 max-sm:text-3xl;
+    }
+    .infodate{
+        @apply text-white text-center font-podkova text-xl
     }
 }
