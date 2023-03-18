@@ -16,13 +16,14 @@
 	<body class="overflow-x-hidden w-screen">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@500&display=swap');
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 		</style>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<nav class="z-10">
 			<div class="header">
 				<div class="left-section">
-					<img class="main-logo" src="pic/Logo-Truong-Dai-hoc-Bach-khoa-Dai-hoc-Da-Nang-DUT-1024x1024.webp" alt="">
-					<p class="main-content">DUT Job Fair 2023</p>
+					<img class="main-logo" src="../assets/iconjf-02.png" alt="">
+					<p class="main-content max-md:hidden">DUT Job Fair 2023</p>
 				</div>
 				<div class="right-section">
 					<div class="fullscreen">
@@ -152,16 +153,75 @@
 				<img class="background-image" src="pic/briefBg.png" alt="">
 			</div>
 		</nav>
-		<div class="block h-auto xl:hidden">
-			<img src="../assets/background.png" class="pt-[80px] h-screen overflow-hidden">
+		<div class="h-auto pt-[80px] md:hidden">
+			<div class="relative">
+				<img src="../assets/background.png" class="h-screen overflow-hidden object-cover">
+				<div class="absolute top-20" >
+					<img src="../assets/logo.png" class="w-screen" data-aos="fade-down" data-aos-duration="1500">
+				</div>
+			</div>
+			<div id="mobilecountdown" class="absolute bottom-1/3 flex justify-center w-screen gap-x-1 sm:bottom-1/4 sm:gap-x-2" data-aos="fade-up" data-aos-duration="1500">
+				
+				<span>
+					<span class="countdown-clock">
+						<div class="flex items-center justify-center">
+							<h2 id="day1" class="countdown-number">10</h2>
+						</div>
+						
+					</span>
+					<h2 class="infodate">Ngày</h2>
+				</span>	
+					
+					
+				
+				<span class="text-white flex flex-col justify-center text-5xl">:</span>
+				<span>
+					<span class="countdown-clock">
+						<div class="flex items-center justify-center">
+							<h2 id="hour1" class="countdown-number">10</h2>
+						</div>
+					</span>
+					<h2 class="infodate">Giờ</h2>
+				</span>
+				
+				<span class="text-white flex flex-col justify-center text-5xl">:</span>
+				<span>
+					<span class="countdown-clock">
+						<div class="flex items-center justify-center">
+							<h2 id="minute1" class="countdown-number">10</h2>
+						</div>
+					</span>
+					<h2 class="infodate">Phút</h2>
+				</span>
+				
+				<span class="text-white flex flex-col justify-center text-5xl">:</span>
+
+				<span>
+					<span class="countdown-clock">
+						<div class="flex items-center justify-center">
+							<h2 id="second1" class="countdown-number">10</h2>
+						</div>
+					</span>
+					<h2 class="infodate">Giây</h2>
+				</span>
+				
+				
+			</div>
+
+		<div class="absolute bottom-[10%] flex justify-center w-screen" data-aos="zoom-in" data-aos-duration="1500">
+			<a class="bg-white w-1/2 mx-4 text-center rounded-lg text-red-900 border-red-900 hover:bg-red-900 hover:text-white hover:border-white hover:border-2 text-lg">Đăng ký tham gia</a>
 		</div>
-		<div class=" hidden xl:h-screen xl:flex xl:pt-[80px] " >
+			
+			
+		</div>
+		
+		<div class=" hidden md:h-screen md:flex md:pt-[80px] " >
 			
 			<div class="w-1/2 bg-slate-200 flex flex-col items-center justify-center"data-aos="fade-right" data-aos-duration="1500">
 				<div class="ml-16 items-center pr-32 text-center">
-					<h1 class="text-bold text-rose-900 text-2xl font-bold 2xl:text-3xl">NGÀY HỘI VIỆC LÀM</h1>
-					<p class="text-bold text-red-900 text-3xl font-bold 2xl:text-4xl">DUT JOBFAIR </p>
-					<span class="text-bold text-red-900 text-3xl font-bold 2xl:text-6xl">2023</span>
+					<h1 class="text-bold text-rose-900 text-2xl font-bold 2md:text-3xl">NGÀY HỘI VIỆC LÀM</h1>
+					<p class="text-bold text-red-900 text-3xl font-bold 2md:text-4xl">DUT JOBFAIR </p>
+					<span class="text-bold text-red-900 text-3xl font-bold 2md:text-6xl">2023</span>
 				</div>
 				<!--countdown clock luvohoang -->
 				<div class="countdown_clock">
@@ -190,11 +250,11 @@
 					
 				</div>
 			</div>
-			<div class="hidden xl:h-[calc(100vh-80px)] xl:flex xl:flex-col xl:justify-end xl:items-end xl:-ml-16 xl:max-w-[1280px] xl:w-full xl:bg-slate-200 xl:overflow-hidden xl:justify-items-end" data-aos="fade-left" data-aos-duration="1500">
+			<div class="hidden md:h-[calc(100vh-80px)] md:flex md:flex-col md:justify-end md:items-end md:-ml-16 md:max-w-[1280px] md:w-full md:bg-slate-200 md:overflow-hidden md:justify-items-end" data-aos="fade-left" data-aos-duration="1500">
 				<!-- <img src="../assets/background.png" class="containter w-1/2"> -->
 				<div
 							id="maining"
-							class="hidden xl:relative xl:block"
+							class="hidden md:relative md:block"
 							data-te-carousel-init
 							data-te-carousel-slide>
 							<div
@@ -205,8 +265,9 @@
 									data-te-carousel-active>
 									<img
 										src="../assets/background.png"
-										class="block w-full"
+										class="block w-full h-screen object-fill"
 										alt="Wild Landscape" />
+									<img src="../assets/logo.png" class="absolute top-0">
 								</div>
 								<div
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
@@ -270,7 +331,7 @@
 						</div>
 			</div>
 		</div>
-		<div class="h-screen py-4 px-4 xl:hidden" data-aos="flip-left" data-aos-duration="1500">
+		<div class="h-screen py-4 px-4 md:hidden" data-aos="fade-up" data-aos-duration="1500">
 			<div class="px-4 py-2">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.802319243922!2d108.14986941527002!3d16.075744743532386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219bc8aef65d3%3A0xd12d7a5b6d096990!2zS2h1IEYgLSBUcsaw4budbmcgxJBIQksgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1678529524874!5m2!1svi!2s" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
 			</div>
@@ -297,13 +358,13 @@
 				54 Nguyễn Lương Bằng, Q. Liên Chiểu, TP. Đà Nẵng</p> -->
 		</div>
 		<br>
-		<div class="w-full h-screen bg-white px-8 xl:hidden" data-aos="fade-right" data-aos-duration="1500">
+		<div class="w-full h-screen bg-slate-200 px-8 md:hidden" data-aos="fade-right" data-aos-duration="1500">
 			<h1 class="text-center text-4xl uppercase text-amber-800 font-bold py-5">Đơn vị tổ chức:</h1>
 			<div class="flex justify-center">
 				<img src="../assets/logo-bk.jpg" class="w-1/3">
 			</div>
-			<h1 class="text-left text-2xl uppercase text-amber-800 font-bold py-5">Trường Đại Học Bách Khoa - Đại học Đà Nẵng</h1>
-			<p class="text-justify">Trường Đại học Bách khoa Đà Nẵng là trường đại học chuyên ngành kỹ thuật đầu ngành tại Việt Nam. Là cơ sở giáo dục đại học cung cấp nguồn nhân lực chất lượng cao, có năng lực đổi mới, sáng tạo và khởi nghiệp trong lĩnh vực kỹ thuật – công nghệ; thực hiện nghiên cứu khoa học và chuyển giao công nghệ phục vụ sự phát triển bền vững kinh tế – xã hội của miền Trung – Tây Nguyên, trong nước và quốc tế.</p>
+			<h2 class="text-left text-2xl uppercase text-amber-800 font-bold py-10">Trường Đại Học Bách Khoa - Đại học Đà Nẵng</h2>
+			<p class="text-justify px-4">Trường Đại học Bách khoa Đà Nẵng là trường đại học chuyên ngành kỹ thuật đầu ngành tại Việt Nam. Là cơ sở giáo dục đại học cung cấp nguồn nhân lực chất lượng cao, có năng lực đổi mới, sáng tạo và khởi nghiệp trong lĩnh vực kỹ thuật – công nghệ; thực hiện nghiên cứu khoa học và chuyển giao công nghệ phục vụ sự phát triển bền vững kinh tế – xã hội của miền Trung – Tây Nguyên, trong nước và quốc tế.</p>
 			<div class="flex justify-center">
 				<a class="bg-transparent hover:bg-red-900 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-900 hover:border-transparent rounded"> Truy cập </a>
 			</div>
@@ -313,10 +374,10 @@
 			
 			<div class="h-full">
 				<div id="nhungconsoantuong" class="flex items-center justify-center py-6" data-aos="fade-down" data-aos-duration="1500">
-					<h1 class="text-6xl text-red-900 font-bold pt-12 max-xl:text-4xl max-lg:text-2xl max-lg:pt-auto max-md:text-3xl">NHỮNG CON SỐ ẤN TƯỢNG</h1>
+					<h2 class="text-6xl text-red-900 font-bold pt-12 max-xl:text-4xl max-lg:text-2xl max-lg:pt-auto max-md:text-3xl">NHỮNG CON SỐ ẤN TƯỢNG</h2>
 				</div>
 				<div class="flex h-5/6 max-lg:flex-col">
-					<div class="w-1/2 pr-5 flex flex-col justify-around  max-lg:h-screen max-lg:w-screen max-lg:pr-0" data-aos="fade-right" data-aos-duration="1500">
+					<div class="w-1/2 pr-5 flex flex-col justify-around  max-lg:h-screen max-lg:w-screen max-lg:pr-0" data-aos="zoom-in-right" data-aos-duration="1500">
 						<div class="counting-items">
               			<h1 class="number">45</h1>
 						<p class="text-right text-xl">Là số doanh nghiệp, công ty trở thành đối tác của chương trình</p>
@@ -331,7 +392,7 @@
 						</div>
 						<div class="counting-items"><p class="text-right text-xl"> <span class="number">600</span> <br>sinh viên</p></div>
 					</div>
-					<div class="w-1/2 max-xl:hidden" data-aos="zoom-in-left" data-aos-duration="1500">
+					<div class="w-1/2 max-md:hidden " data-aos="zoom-in-left" data-aos-duration="1500">
 						<div class="px-4 py-2">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.802319243922!2d108.14986941527002!3d16.075744743532386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219bc8aef65d3%3A0xd12d7a5b6d096990!2zS2h1IEYgLSBUcsaw4budbmcgxJBIQksgxJDDoCBO4bq1bmc!5e0!3m2!1svi!2s!4v1678529524874!5m2!1svi!2s" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
 						</div>
@@ -362,7 +423,7 @@
 			<br>
 			<div class="h-full">
 				<div class="flex max-lg:block">
-					<div class="w-1/2 h-screen bg-white px-8 max-lg:hidden" data-aos="fade-right" data-aos-duration="1500">
+					<div class="w-1/2 h-screen px-8 max-lg:hidden " data-aos="fade-right" data-aos-duration="1500">
 						<h1 class="text-center text-6xl uppercase text-amber-800 font-bold py-5">Đơn vị tổ chức:</h1>
 						<div class="flex justify-center">
 							<img src="../assets/logo-bk.jpg" class="w-1/3">
@@ -418,7 +479,7 @@
 									data-te-carousel-item
 									data-te-carousel-active>
 									<img
-										src="../assets/Frame 2.png"
+										src="../assets/hoatdong/tuyendung.jpg"
 										class="block w-full"
 										alt="Wild Landscape" />
 								</div>
@@ -426,7 +487,7 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 3.png"
+										src="../assets/hoatdong/tuyendung2.jpg"
 										class="block w-full"
 										alt="Camera" />
 								</div>
@@ -434,7 +495,7 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 4.png"
+										src="../assets/hoatdong/tuyendung3.jpg"
 										class="block w-full"
 										alt="Exotic Fruits" />
 								</div>
@@ -502,13 +563,13 @@
 							data-te-carousel-init
 							data-te-carousel-slide>
 							<div
-								class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+								class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']">
 								<div
 									class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item
 									data-te-carousel-active>
 									<img
-										src="../assets/Frame 2.png"
+										src="../assets/hoatdong/hoithao.JPG"
 										class="block w-full"
 										alt="Wild Landscape" />
 								</div>
@@ -516,7 +577,7 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 3.png"
+										src="../assets/hoatdong/hoithao2.JPG"
 										class="block w-full"
 										alt="Camera" />
 								</div>
@@ -524,7 +585,7 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 4.png"
+										src="../assets/hoatdong/hoithao3.JPG"
 										class="block w-full"
 										alt="Exotic Fruits" />
 								</div>
@@ -598,7 +659,7 @@
 									data-te-carousel-item
 									data-te-carousel-active>
 									<img
-										src="../assets/Frame 2.png"
+										src="../assets/hoatdong/gianhang.jpg"
 										class="block w-full"
 										alt="Wild Landscape" />
 								</div>
@@ -606,7 +667,7 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 3.png"
+										src="../assets/hoatdong/gianhang2.jpg"
 										class="block w-full"
 										alt="Camera" />
 								</div>
@@ -614,13 +675,13 @@
 									class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
 									data-te-carousel-item>
 									<img
-										src="../assets/Frame 4.png"
+										src="../assets/hoatdong/gianhang3.jpg"
 										class="block w-full"
 										alt="Exotic Fruits" />
 								</div>
 							</div>
 							<button
-								class="absolute top-0 bottom-0 2xl:top-0 2xl:bottom-0 left-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+								class="absolute top-0 bottom-0 2md:top-0 2md:bottom-0 left-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
 								data-te-target="#carouselExampleControls3"
 								data-te-slide="prev">
@@ -644,7 +705,7 @@
 									>
 							</button>
 							<button
-								class="absolute top-0 bottom-0 2xl:top-0 2xl:bottom-0 right-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+								class="absolute top-0 bottom-0 2md:top-0 2md:bottom-0 right-0 z-[0] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
 								type="button"
 								data-te-target="#carouselExampleControls3"
 								data-te-slide="next">
@@ -697,7 +758,7 @@
 						</div>
 					</div>
 					<div class="grid grid-rows-4 h-fit">
-						<div class="flex flex-row h-fit p-6 place-self-center max-xl:block">
+						<div class="flex flex-row h-fit p-6 place-self-center max-md:block">
 							<div class="flex-1 basis-1/4 flex flex-col justify-center max-w-fit px-2 " data-aos="fade-right" data-aos-duration="1500">
 								<img src="../assets/sponsor_logo/bk/agilityio.png" alt="Agility logo" class="w-auto">
 							</div>
@@ -711,7 +772,7 @@
 								<a class="rounded-full bg-red-900 w-24 h-12 text-center text-white hover:text-red-900 py-1 border-4 border-red-900 hover:bg-white" href="https://agilityio.com.vn" target="_blank">Truy cập</a>
 							</div>
 						</div>
-						<div class="flex flex-row h-fit p-6 place-self-center max-xl:block">
+						<div class="flex flex-row h-fit p-6 place-self-center max-md:block">
 							<div class="flex-1 basis-1/4 flex flex-col justify-center max-w-fit px-2" data-aos="fade-right" data-aos-duration="1500">
 								<img src="../assets/sponsor_logo/bk/Carlsberg.jpg" alt="Carlsberg logo" class="w-auto">
 							</div>
@@ -726,7 +787,7 @@
 								<a class="rounded-full bg-red-900 w-24 h-12 text-center text-white hover:text-red-900 py-1 border-4 border-red-900 hover:bg-white" href="https://www.carlsbergvietnam.vn/en/" target="_blank">Truy cập</a>
 							</div>
 						</div>
-						<div class="flex flex-row h-fit p-6 place-self-center max-xl:block">
+						<div class="flex flex-row h-fit p-6 place-self-center max-md:block">
 							<div class="flex-1 basis-1/4 flex flex-col justify-center max-w-fit px-2" data-aos="fade-right" data-aos-duration="1500">
 								<img src="../assets/sponsor_logo/bk/KTV.jpg" alt="Koei Tecmo logo" class="w-auto">
 							</div>
@@ -740,9 +801,9 @@
 								<a class="rounded-full bg-red-900 w-24 h-12 text-center text-white hover:text-red-900 py-1 border-4 border-red-900 hover:bg-white" href="https://koeitecmo.vn" target="_blank">Truy cập</a>
 							</div>
 						</div>
-						<div class="flex flex-row h-fit p-6 place-self-center max-xl:block">
+						<div class="flex flex-row h-fit p-6 place-self-center max-md:block">
 							<div class="flex-1 basis-1/4 flex flex-col justify-center max-w-fit px-2" data-aos="fade-right" data-aos-duration="1500">
-								<img src="../assets/sponsor_logo/bk/THACOGROUP.jpg" alt="Thaco Group logo" class="w-auto max-xl:w-screen">
+								<img src="../assets/sponsor_logo/bk/THACOGROUP.jpg" alt="Thaco Group logo" class="w-auto max-md:w-screen">
 							</div>
 							<div class="flex-1 basis-3/4 flex flex-col justify-start pl-4" data-aos="fade-up" data-aos-duration="1500">
 								<span class="">
@@ -986,7 +1047,7 @@
 				</div>
 			</section>
 		</footer>
-		<script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+		<script src="../dist/index2.js"></script>
 		<script src="./index.js"></script>
 		<script>
 			AOS.init();

@@ -27,6 +27,10 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
+const daymb=document.getElementById("day1");
+const hourmb=document.getElementById("hour1");
+const minmb=document.getElementById("minute1");
+const secmb=document.getElementById("second1");
 const currentYear = new Date().getFullYear();
 
 const DJFTime = new Date(`March 30 ${currentYear} 00:00:00`);
@@ -46,6 +50,13 @@ function updateCountdown()
     hours.innerHTML = h < 10 ? '0' + h : h;
     minutes.innerHTML = m < 10 ? '0' + m : m;
     seconds.innerHTML = s < 10 ? '0' + s : s;
+
+    daymb.innerHTML = d;
+    hourmb.innerHTML = h < 10 ? '0' + h : h;
+    minmb.innerHTML = m < 10 ? '0' + m : m;
+    secmb.innerHTML = s < 10 ? '0' + s : s;
 }
 
 setInterval(updateCountdown, 1000);
+
+
