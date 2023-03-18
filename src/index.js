@@ -60,3 +60,4 @@ function updateCountdown()
 setInterval(updateCountdown, 1000);
 
 // npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+//
