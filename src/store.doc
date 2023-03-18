@@ -1,0 +1,51 @@
+***dropdown for HOẠT ĐỘNG **********
+
+	<!-- <div class="dropdown">
+        <div class="dropdown-box">
+            <li class="choose-box">
+                <a href="#hoatdong"> HOẠT ĐỘNG</a>
+                <div class="box1 btn1"></div>
+            </li>
+            <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i>
+        </div>
+        <ul class="dropdown-hover">
+            <li>
+                <a href="#"> SHOP/SEMINAR</a>
+            </li>
+            <li>
+                <a href="#">NGÀY HỘI </a>
+            </li>
+            <li>
+                <a href="#"> TUYỂN DỤNG</a>
+            </li>
+            <li>
+                <a href="#">LỊCH TRÌNH/SƠ ĐỒ</a>
+            </li>
+        </ul>
+    </div> -->
+
+***dropdown for HOẠT ĐỘNG while not full screen *********
+
+    <!-- <div class="dropdown">
+        <div class="dropdown-box">
+            <li class="choose-box">
+                <a href="#hoatdong"> HOẠT ĐỘNG</a>
+                <div class="box2 btn2"></div>
+            </li>
+            <i class="fa-solid fa-angle-down" style="padding-top: 0px;margin-left: 5px;"></i>
+        </div>
+        <ul class="dropdown-hover">
+            <li>
+                <a href="#"> SHOP/SEMINAR</a>
+            </li>
+            <li>
+                <a href="#">NGÀY HỘI </a>
+            </li>
+            <li>
+                <a href="#"> TUYỂN DỤNG</a>
+            </li>
+            <li>
+                <a href="#">LỊCH TRÌNH/SƠ ĐỒ</a>
+            </li>
+        </ul>
+    </div> -->
