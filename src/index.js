@@ -60,3 +60,20 @@ function updateCountdown()
 setInterval(updateCountdown, 1000);
 
 
+var hd=document.getElementById("lihoatdong");
+var dt=document.getElementById("lidoitac");
+
+const hovering=()=>{
+    document.style.cursor = Pointer;
+}
+
+const hdnoibat=()=>{
+    document.getElementById("hoatdong").scrollIntoView();
+}
+const doitac=()=>{
+    document.getElementById("doitac").scrollIntoView();
+}
+hd.addEventListener("onmouseover", hovering());
+dt.addEventListener("onmouseover", hovering());
+hd.addEventListener("click", hdnoibat());
+dt.addEventListener("click", doitac())
