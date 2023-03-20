@@ -320,7 +320,7 @@ a:hover
 .dropdown2-hover
 {
     position: relative;
-    opacity: 0;
+    right: -500px;
     display: flex;
     flex-direction: column;
     background-color: #e2e8f0;
@@ -411,7 +411,7 @@ a:hover
     }
     .dropdown2-hover.active
     {
-        opacity: 1;
+        right: 0;
     }
     .fa-solid fa-angle-down.active
     {

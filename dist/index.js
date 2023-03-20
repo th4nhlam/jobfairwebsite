@@ -1,12 +1,23 @@
 const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
+const dropdownangle = document.querySelector(".dropdown-angle");
+const dropdownhover = document.querySelector(".dropdown2-hover");
+const hd=document.getElementById("lihoatdong");
+const dt=document.getElementById("lidoitac");
 
+hd.addEventListener("click", ()=>{document.getElementById("hoatdong").scrollIntoView();});
+dt.addEventListener("click", ()=>{document.getElementById("sponsor").scrollIntoView();});
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
 })
 
-document.querySelectorAll("link").forEach(n => n.addEventListener("click", () =>{
+dropdownangle.addEventListener("click", () => {
+    dropdownhover.classList.toggle("active");
+    // console.log("Sfsdg");
+})
+
+document.querySelectorAll(".choose-box").forEach(n => n.addEventListener("click", () =>{
     hamburger.classList.remove("active");
     menu.classList.remove("active");
 }))
@@ -52,5 +63,10 @@ function updateCountdown()
 }
 
 setInterval(updateCountdown, 1000);
+
+
+
+
+
 
 
