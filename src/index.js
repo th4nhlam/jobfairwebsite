@@ -2,6 +2,11 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const dropdownangle = document.querySelector(".dropdown-angle");
 const dropdownhover = document.querySelector(".dropdown2-hover");
+const hd=document.getElementById("lihoatdong");
+const dt=document.getElementById("lidoitac");
+
+hd.addEventListener("click", ()=>{document.getElementById("hoatdong").scrollIntoView();});
+dt.addEventListener("click", ()=>{document.getElementById("sponsor").scrollIntoView();});
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     menu.classList.toggle("active");
@@ -60,20 +65,8 @@ function updateCountdown()
 setInterval(updateCountdown, 1000);
 
 
-const hd=document.getElementById("lihoatdong");
-const dt=document.getElementById("lidoitac");
 
 
 
 
-const hdnoibat=()=>{
-    let ele=document.getElementById("hoatdong");
-    ele.scrollIntoView();
-}
-const doitac=()=>{
-    let ele=document.getElementById("sponsor");
-    ele.scrollIntoView();
-}
 
-hd.addEventListener("click", hdnoibat());
-dt.addEventListener("click", doitac());
