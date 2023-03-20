@@ -4,5 +4,6 @@
     "type": "frontend"
   },
   "packageManager": "npm",
-  "hash": "ad73ab8f"
+  "hash": "ad73ab8f",
+  "domain": "dutjobfair.com"
 }
