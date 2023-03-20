@@ -60,20 +60,20 @@ function updateCountdown()
 setInterval(updateCountdown, 1000);
 
 
-var hd=document.getElementById("lihoatdong");
-var dt=document.getElementById("lidoitac");
+const hd=document.getElementById("lihoatdong");
+const dt=document.getElementById("lidoitac");
 
-const hovering=()=>{
-    document.style.cursor = Pointer;
-}
+
+
 
 const hdnoibat=()=>{
-    document.getElementById("hoatdong").scrollIntoView();
+    let ele=document.getElementById("hoatdong");
+    ele.scrollIntoView();
 }
 const doitac=()=>{
-    document.getElementById("doitac").scrollIntoView();
+    let ele=document.getElementById("sponsor");
+    ele.scrollIntoView();
 }
-hd.addEventListener("onmouseover", hovering());
-dt.addEventListener("onmouseover", hovering());
+
 hd.addEventListener("click", hdnoibat());
-dt.addEventListener("click", doitac())
+dt.addEventListener("click", doitac());
