@@ -38,7 +38,7 @@ const minmb=document.getElementById("minute1");
 const secmb=document.getElementById("second1");
 const currentYear = new Date().getFullYear();
 
-const DJFTime = new Date(`March 30 ${currentYear} 00:00:00`);
+const DJFTime = new Date(`March 31 ${currentYear} 00:08:00`);
 
 //Update countdown time
 function updateCountdown()
