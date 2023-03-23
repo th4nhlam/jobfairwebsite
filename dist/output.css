@@ -1688,10 +1688,6 @@ video {
   flex-wrap: wrap;
 }
 
-.content-end {
-  align-content: flex-end;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -1724,10 +1720,6 @@ video {
   justify-content: space-evenly;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1745,10 +1737,6 @@ video {
 
 .place-self-center {
   place-self: center;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .\!overflow-hidden {
@@ -4832,10 +4820,6 @@ ul li:hover ul.dropdown
     align-items: flex-end;
   }
 
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
   .md\:justify-end {
     justify-content: flex-end;
   }
@@ -4869,10 +4853,6 @@ ul li:hover ul.dropdown
 
   .md\:pl-4 {
     padding-left: 1rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 }
 
