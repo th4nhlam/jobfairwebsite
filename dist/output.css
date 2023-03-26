@@ -1784,6 +1784,10 @@ video {
   overflow-x: hidden;
 }
 
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
