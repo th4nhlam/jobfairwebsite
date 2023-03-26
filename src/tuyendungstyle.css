@@ -8,9 +8,48 @@ body
     padding-right: 150px;
     background-color: rgb(242, 244, 246);
 }
+.theme
+{
+    z-index: -3;
+    position: relative;
+    margin-left: -150px;
+    width: 2000px;
+    height: 400px;
+    background-color: rgb(20, 20, 78);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.theme_content
+{
+    z-index: -1;
+    position: absolute;
+    /* width: 2000px;
+    height: 300px; */
+    margin: 0 auto;
+}
+.theme_content p 
+{
+    z-index: -1;
+    display: inline-block;
+    color: white;
+    font-size: 70px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 150px;
+    /* margin: 0 auto; */
+}
+.theme_pic
+{
+    position: absolute;
+    z-index: -2;
+    width: 200%;
+    height: 200%;
+    opacity: 0.6;
+}
 .screen
 {
-    /* background-color: lightblue; */
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
