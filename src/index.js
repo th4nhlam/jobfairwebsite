@@ -2,8 +2,12 @@ const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu");
 const dropdownangle = document.querySelector(".dropdown-angle");
 const dropdownhover = document.querySelector(".dropdown2-hover");
+const dropdown2 = document.querySelector(".dropdown2");
+const hoatdong = document.getElementById("hohoatdong");
+const dangki = document.getElementById("drdangki");
 const hd=document.getElementById("lihoatdong");
 const dt=document.getElementById("lidoitac");
+const lidangki = document.getElementById("lidangki");
 
 hd.addEventListener("click", ()=>{document.getElementById("hoatdong").scrollIntoView();});
 dt.addEventListener("click", ()=>{document.getElementById("sponsor").scrollIntoView();});
@@ -12,8 +16,22 @@ hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
 })
 
+lihoatdong.addEventListener("click", () => {
+    lihoatdong.classList.toggle("active");
+    hoatdong.classList.toggle("active");
+})
+lidangki.addEventListener("click", () => {
+    lidangki.classList.toggle("active");
+    dangki.classList.toggle("active");
+})
 dropdownangle.addEventListener("click", () => {
-    dropdownhover.classList.toggle("active");
+    // dropdownhover.classList.toggle("active");
+    
+    // console.log("Sfsdg");
+})
+dropdownangle.addEventListener("click", () => {
+    // dropdownhover[1].classList.toggle("active");
+    // hoatdong.toggle("active");
     // console.log("Sfsdg");
 })
 
