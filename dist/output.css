@@ -3215,6 +3215,7 @@ li
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .choose-box:hover
@@ -3440,6 +3441,7 @@ a:hover
   flex-direction: column;
   justify-content: space-between;
   height: 60px;
+  transition: 0.5s;
 }
 
 .dropdown2 .choose-box
@@ -3463,10 +3465,10 @@ a:hover
   background-color: #e2e8f0;
   padding-left: 40px;
   margin-top: -5px;
-  width: 250px;
+  width: 100%;
   padding-bottom: 100%;
   transition: 0.5s;
-  height: 100vh;
+  height: 100%;
 }
 
 /* .dropdown2-hover li
@@ -3555,6 +3557,22 @@ a:hover
     right: 0px;
     height: 100pc;
     /* transform: 3s; */
+  }
+
+  .dropdown2.active
+    {
+    /* height: 147px; */
+    /* bottom: 200px; */
+  }
+
+  #lihoatdong.active
+    {
+    height: 147px;
+  }
+
+  #lidangki.active
+    {
+    height: -547px;
   }
 
   .dropdown2-hover.active
