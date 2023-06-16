@@ -56,25 +56,25 @@ const minmb=document.getElementById("minute1");
 const secmb=document.getElementById("second1");
 const currentYear = new Date().getFullYear();
 
-const DJFTime = new Date(`March 31 ${currentYear} 00:00:00`);
+const DJFTime = new Date(`March 31 ${currentYear+1} 00:00:00`);
 
 //Update countdown time
 function updateCountdown()
 {
     const currentTime = new Date();
-    const diff = DJFTime - currentTime;
+    const diff = Math.abs(DJFTime - currentTime);
 
     const d = Math.floor(diff / 1000 / 60 / 60 / 24);
     const h = Math.floor(diff / 1000 / 60 / 60) % 24;
     const m = Math.floor(diff / 1000 / 60) % 60;
     const s = Math.floor(diff / 1000) % 60;
 
-    days.innerHTML = '0' + d;
+    days.innerHTML = d < 10 ? '0' + d : d;
     hours.innerHTML = h < 10 ? '0' + h : h;
     minutes.innerHTML = m < 10 ? '0' + m : m;
     seconds.innerHTML = s < 10 ? '0' + s : s;
 
-    daymb.innerHTML = '0' + d;
+    daymb.innerHTML = d < 10 ? '0' + d : d;
     hourmb.innerHTML = h < 10 ? '0' + h : h;
     minmb.innerHTML = m < 10 ? '0' + m : m;
     secmb.innerHTML = s < 10 ? '0' + s : s;
