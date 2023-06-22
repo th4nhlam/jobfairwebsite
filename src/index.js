@@ -56,12 +56,16 @@ const minmb=document.getElementById("minute1");
 const secmb=document.getElementById("second1");
 const currentYear = new Date().getFullYear();
 
-const DJFTime = new Date(`March 31 ${currentYear+1} 00:00:00`);
+
 
 //Update countdown time
 function updateCountdown()
-{
+{   const testTime =  new Date(`March 31 ${currentYear} 00:00:00`);
+    let DJFTime;
     const currentTime = new Date();
+    if(testTime - currentTime < 0) DJFTime = new Date(`March 31 ${currentYear+1} 00:00:00`);
+    else DJFTime = new Date(`March 31 ${currentYear} 00:00:00`);``
+    
     const diff = Math.abs(DJFTime - currentTime);
 
     const d = Math.floor(diff / 1000 / 60 / 60 / 24);
